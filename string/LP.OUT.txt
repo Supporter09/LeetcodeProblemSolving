@@ -1,0 +1,6 @@
+Test case lan 0
+a
+Test case lan 1
+bab
+Test case lan 2
+bb
