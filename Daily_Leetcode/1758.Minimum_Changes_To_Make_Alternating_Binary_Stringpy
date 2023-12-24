@@ -1,0 +1,15 @@
+# There is only two way to start the string. Therefore, we create 2 satisfied 
+# strings (0-start and 1-start) and check the different chars between 2 strings and given string 
+# Then take min of two as result
+
+def minOperations(s):
+    n=len(s)
+    op=[0]*2
+
+    for i in range(0, n, 2):
+        op[ord(s[i])&1]+=1
+        if i+1<n:
+            op[1-(ord(s[i+1])&1)]+=1
+    return min(op[0], op[1])  
+
+print(minOperations('10010100'))
