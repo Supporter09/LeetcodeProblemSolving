@@ -23,4 +23,4 @@ class Solution:
                 minDiff = min(minDiff, maxToday + topDown(i+1, remainDayCount-1))
             return minDiff
 
-        return topDown(0, d)
+        return topDown(0, d) 
