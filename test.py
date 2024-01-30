@@ -1,2 +1,2 @@
-arr = [5,4]
-arr.pop(3)
+arr = [5, 4]
+print("Hello World")
